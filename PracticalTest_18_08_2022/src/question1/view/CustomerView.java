@@ -5,10 +5,11 @@ import question1.service.CustomerService;
 
 public class CustomerView {
      public static void main(String args[]) {
+    	 Customer cust2 = new Customer();
     	 Customer cust1 = new Customer(1,"Anu", 2);
     	 CustomerService custservice = new CustomerService();
     	 boolean eligible = custservice.checkEligibility(cust1);
-    	 if(eligible == true) {
+    	 if(eligible) { 
     		 System.out.println("You are eligible for voting");
     	 }
     	 else {
