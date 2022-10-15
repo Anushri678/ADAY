@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Book {
 private String bookID;
-private static String title;
-private String author;
+private static  String title;
+private static  String author;
 private String category;
 private float price;
 public Book() {
@@ -31,7 +31,7 @@ public static String getTitle() {
 public void setTitle(String title) {
 	this.title = title;
 }
-public String getAuthor() {
+public static String getAuthor() {
 	return author;
 }
 public void setAuthor(String author) {
@@ -71,7 +71,4 @@ public boolean equals(Object obj) {
 			&& Objects.equals(category, other.category)
 			&& Float.floatToIntBits(price) == Float.floatToIntBits(other.price) && Objects.equals(title, other.title);
 }
-
-
-
 }
