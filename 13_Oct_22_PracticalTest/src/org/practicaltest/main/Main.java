@@ -11,26 +11,39 @@ import org.practicaltest.view.BookView;
 
 public class Main {
 	static Scanner sc = new Scanner(System.in);
+	public static void addNewBook() {
+		BookView.addBook();
+	}
+	
+	public static void displayNewBook() {
+		 ArrayList<Book> allbook = BookView.displayBook();
+			for(Book i: allbook) {
+				System.out.println(i);
+				}
+	}
+	
+	public static void searchBookBYTitle() {
+		BookView.searchByTitle();
+	}
+	
+	public static void searchBookByAuthor() {
+		BookView.searchByAuthor();
+	}
 	public static void subMenu() {
 		System.out.println("1. Add a new Book");
 		System.out.println("2. Display all Book");
-		System.out.println("3. Sorted book by it's title");
+		System.out.println("3. Search book by it's title");
 		System.out.println("4. Search book by it's author name");
 		int choice = sc.nextInt();
 		switch(choice) {
-		case 1: BookView.addBook();
+		case 1: addNewBook();
 		System.out.println("New Book is Added");
 		break;
-		case 2: ArrayList<Book> allbook = BookView.displayBook();
-		for(Book i: allbook) {
-			
-				System.out.println(i);
-			
-		}
+		case 2: displayNewBook();
 		break;
-		case 3 : BookDAO.searchByTitle();
+		case 3 : searchBookBYTitle();
 		break;
-		case 4 : BookDAO.searchByAuthor();
+		case 4 : searchBookByAuthor();
 		break;
 		default : System.out.println("Invalid Choice");
 		}
