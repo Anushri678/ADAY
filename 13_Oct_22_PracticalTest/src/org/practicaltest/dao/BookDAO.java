@@ -11,6 +11,7 @@ import org.practicaltest.view.BookView;
 public class BookDAO {
 	static Scanner sc = new Scanner(System.in);
 static ArrayList<Book> bookset = new ArrayList<>();
+static ArrayList<Book> bookset1 = new ArrayList<>();
 public static boolean addBook(Book book) {
 	boolean result = false;
 	
@@ -20,16 +21,9 @@ public static boolean addBook(Book book) {
 	return result;
 	}
 
-
-
-
 public static ArrayList<Book> displayBook() {
 	return bookset;
 }
-
-
-
-
 
 
 }

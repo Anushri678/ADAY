@@ -19,5 +19,30 @@ public class BookService {
 	}
 
 
+	public static void searchByTitle(String titleString1) {
+		System.out.println("printed");
+		for(Book b : bookset){
+	        if(titleString1.equalsIgnoreCase(Book.getTitle())){
+	         System.out.println("Book is avaliable");
+	        }
+	        else {
+	        	System.out.println("Book is not avaliable");
+	        }
+		}
+	}
+
+
+	public static void searchByAuthor(String authorString1) {
+		for(Book b : bookset){
+	        if(authorString1.equalsIgnoreCase(Book.getAuthor())){
+	           System.out.println("Book is avaliable");
+	        }
+	        else {
+	    System.out.println("Book is not avalible");
+	        }
+	    }
+	}
+
+
 	
 }
