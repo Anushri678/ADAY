@@ -19,14 +19,14 @@ public class Person {
 	@GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 	@Column(length = 30, nullable = false)
-	@NotBlank(message = "employee name can not be blank")
+	@NotBlank(message = "person name can not be blank")
 	@Min(value = 3)
 	private String nameString;
 	@Column(length = 30, nullable = false)
-	@NotBlank(message = "employee email can not be blank")
+	@NotBlank(message = "person email can not be blank")
 	private String emailString;
 	@Column(length = 30, nullable = false, unique = true)
-	@NotBlank(message = "employee mobile number can not be blank")
+	@NotBlank(message = "perason mobile number can not be blank")
 	@Min(value = 10)
 	private long mobile;
 	
