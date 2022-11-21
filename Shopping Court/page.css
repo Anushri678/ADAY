@@ -1,0 +1,144 @@
+.navigation ul,
+.navigation li{
+    margin: 0;
+    padding: 0;
+}
+
+.first-header{
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li{
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    padding: 40px;
+    margin-top: -30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.side-identity{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: -24px;
+    height: 70px;
+    background-color: #44ecf8;
+    margin-bottom: 10px;
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+
+.wrapper {
+    display: grid;
+    padding-top: 60px;
+    
+  }
+  .one {
+    grid-column: 1 / 7;
+    grid-row: 1;
+    margin-left: 40px;
+  }
+  .two {
+    grid-column: 2/ 7;
+    grid-row: 1 ;
+    margin-left: 60px;
+  }
+  .three {
+    grid-column: 3/7;
+    grid-row: 1 ;
+    margin-right: -5px;
+  }
+  .four {
+    grid-column: 4/7;
+    grid-row: 1;
+    margin-right: -5px;
+  }
+  .five {
+    grid-column: 5/7;
+    grid-row: 1;
+    margin-right: -20px;
+  }
+  .six {
+    grid-column: 6/7;
+    grid-row: 1;
+    margin-right: -60px;
+  }
+  .seven{
+    grid-column: 7/7;
+    grid-row: 1;
+    margin-right: -70px;
+  }
+
+
+  .wrapper-2 {
+    display: grid;
+    padding: 30px;
+    background-color: rgb(243, 251, 251);
+    z-index: 1;
+    width: 100%;
+    margin-left: -24px;
+    border: #0e1617;
+  }
+
+  .Electronics1{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    margin-left: 190px;
+  }
+  .Electronics2{
+    grid-column: 2 / 4;
+    grid-row: 1;
+    margin-right: -70px;
+  }
+  .Electronics3{
+    grid-column: 3 / 4;
+    grid-row: 1;
+    margin-right: -130px;
+  }
+  .Electronics4{
+    grid-column: 4 / 4;
+    grid-row: 1;
+    margin-right: -100px;
+  }
+ 
+
+
+  
+
+  h2{
+    position: absolute;
+    
+  }
+
+  .first-header input[type=text] {
+    padding: 8.5px;
+    margin-left: 300px;
+    margin-top: 20px;
+    font-size: 17px;
+    border: 0px  white;
+    float: left;
+    width: 20%;
+    background-color: white;
+  }
+  .first-header button{
+    margin-top: 20px;
+    padding: 1px;
+    border: 3px  rgb(24, 143, 194);
+    background-color: white;
+  }
+  .abc{
+    margin-left: 400px;
+    border: 3px  rgb(24, 143, 194);
+    background-color: white;
+    background-color: #44ecf8;
+  }
